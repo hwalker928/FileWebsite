@@ -1,0 +1,39 @@
+table, th, td {
+    border: 4px solid black;
+    border-collapse: collapse;
+    background-color: white;
+  }
+
+th, td {
+    padding: 15px;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    background: url(https://images.squarespace-cdn.com/content/v1/552b29c2e4b0042c027e2965/1428899857800-LZS9OVRN7CTGLLPH2ELP/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/pattern-triangle.jpg?format=1500w) repeat;
+    -webkit-animation: scroll 60s linear infinite;
+    animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2160px -2160px;
+    }
+}
+#center{
+    width: 450px;
+    height: fit-content;
+    max-width: 100vw;
+    max-width: 100vh;
+    overflow: auto;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
