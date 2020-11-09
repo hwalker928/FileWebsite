@@ -1,19 +1,51 @@
 table, th, td {
-    border: 4px solid black;
+    border: 2px solid #4d4d4d;
     border-collapse: collapse;
-    background-color: white;
-  }
+    background-color: rgba(0, 0, 0, .1);
+}
+
+*{
+    color: #fdfdfd;
+}
 
 th, td {
+    padding: 0px;
+}
+.top th{
     padding: 15px;
-  }
+}
 
-  body{
+body{
     margin: 0;
     padding: 0;
     background: url(https://images.squarespace-cdn.com/content/v1/552b29c2e4b0042c027e2965/1428899857800-LZS9OVRN7CTGLLPH2ELP/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/pattern-triangle.jpg?format=1500w) repeat;
     -webkit-animation: scroll 60s linear infinite;
     animation: scroll 60s linear infinite;
+}
+
+.button {
+    padding: 15px 32px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+#header{
+    margin: 30px;
+    border: 2px solid #4d4d4d;
+    background: rgba(0, 0, 0, .2);
+    width: 200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    font-family: helvetica;
+}
+
+p {
+    font-family: helvetica;
 }
 
 @keyframes scroll{
@@ -24,17 +56,9 @@ th, td {
         background-position: -2160px -2160px;
     }
 }
-
-.button {
-    padding: 15px 32px;
-    font-size: 16px;
-    border-radius: 8px;
-  }
-
-h2 {
-    font-family: helvetica;
-}
-
-p {
-    font-family: helvetica;
+#content{
+    width: min-content;
+    margin-left: 50vw;
+    margin-top: 50vh;
+    transform: translate(-50%, -50%);
 }
